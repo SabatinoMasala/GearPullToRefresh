@@ -1,0 +1,10 @@
+PODS:
+  - INSPullToRefresh (1.0.3)
+
+DEPENDENCIES:
+  - INSPullToRefresh
+
+SPEC CHECKSUMS:
+  INSPullToRefresh: 2d14685ead74d29e1adc47e4c6989e966ebac23e
+
+COCOAPODS: 0.35.0
