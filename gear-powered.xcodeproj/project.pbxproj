@@ -14,6 +14,8 @@
 		04D04A9F1AC1E38E00E65A50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D04A9E1AC1E38E00E65A50 /* Images.xcassets */; };
 		04D04AA21AC1E38E00E65A50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D04AA01AC1E38E00E65A50 /* LaunchScreen.xib */; };
 		04D04AAE1AC1E38E00E65A50 /* gear_poweredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D04AAD1AC1E38E00E65A50 /* gear_poweredTests.m */; };
+		04D04AB91AC1E4BA00E65A50 /* GearView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D04AB81AC1E4BA00E65A50 /* GearView.m */; };
+		04D04ABC1AC1E4CB00E65A50 /* GearPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D04ABB1AC1E4CB00E65A50 /* GearPullToRefresh.m */; };
 		C4B6F609D13A0746D972016D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2F75E10B6694B264131110 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,10 @@
 		04D04AA71AC1E38E00E65A50 /* gear-poweredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gear-poweredTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D04AAC1AC1E38E00E65A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D04AAD1AC1E38E00E65A50 /* gear_poweredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gear_poweredTests.m; sourceTree = "<group>"; };
+		04D04AB71AC1E4BA00E65A50 /* GearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearView.h; sourceTree = "<group>"; };
+		04D04AB81AC1E4BA00E65A50 /* GearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearView.m; sourceTree = "<group>"; };
+		04D04ABA1AC1E4CB00E65A50 /* GearPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearPullToRefresh.h; sourceTree = "<group>"; };
+		04D04ABB1AC1E4CB00E65A50 /* GearPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearPullToRefresh.m; sourceTree = "<group>"; };
 		96DBF376E48FDB9AAE80C27F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CF2F75E10B6694B264131110 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC15FD635E39A67A7616A0A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,10 +94,14 @@
 		04D04A901AC1E38E00E65A50 /* gear-powered */ = {
 			isa = PBXGroup;
 			children = (
+				04D04AB71AC1E4BA00E65A50 /* GearView.h */,
+				04D04AB81AC1E4BA00E65A50 /* GearView.m */,
 				04D04A951AC1E38E00E65A50 /* AppDelegate.h */,
 				04D04A961AC1E38E00E65A50 /* AppDelegate.m */,
-				04D04A981AC1E38E00E65A50 /* ViewController.h */,
+				04D04ABA1AC1E4CB00E65A50 /* GearPullToRefresh.h */,
+				04D04ABB1AC1E4CB00E65A50 /* GearPullToRefresh.m */,
 				04D04A991AC1E38E00E65A50 /* ViewController.m */,
+				04D04A981AC1E38E00E65A50 /* ViewController.h */,
 				04D04A9B1AC1E38E00E65A50 /* Main.storyboard */,
 				04D04A9E1AC1E38E00E65A50 /* Images.xcassets */,
 				04D04AA01AC1E38E00E65A50 /* LaunchScreen.xib */,
@@ -279,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D04A9A1AC1E38E00E65A50 /* ViewController.m in Sources */,
+				04D04ABC1AC1E4CB00E65A50 /* GearPullToRefresh.m in Sources */,
 				04D04A971AC1E38E00E65A50 /* AppDelegate.m in Sources */,
 				04D04A941AC1E38E00E65A50 /* main.m in Sources */,
+				04D04AB91AC1E4BA00E65A50 /* GearView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "gear-powered/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -415,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "gear-powered/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
