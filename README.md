@@ -3,7 +3,7 @@ A fancy gear-powered pull-to-refresh animation you can use on any UITableView or
 
 Inspired by [this Dribbble post](https://dribbble.com/shots/1974767-gear-powered-pull-to-refresh-animation)
 
-![https://raw.githubusercontent.com/SabatinoMasala/GearPullToRefresh/master/screens/a.png](https://raw.githubusercontent.com/SabatinoMasala/GearPullToRefresh/master/screens/a.png)
+![https://raw.githubusercontent.com/SabatinoMasala/GearPullToRefresh/1d567f73f710bfcd2dad104419b54f34335e5abf/screens/a.png](https://raw.githubusercontent.com/SabatinoMasala/GearPullToRefresh/1d567f73f710bfcd2dad104419b54f34335e5abf/screens/a.png)
 
 # How to use?
 
